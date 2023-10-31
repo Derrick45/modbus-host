@@ -40,18 +40,20 @@ void mb_port_uartInit(uint32_t baud,uint8_t parity);
 void mb_port_uartEnable(uint8_t txen,uint8_t rxen);
 /**
  * 	@brief  串口发送一个byte
+ *  @param  Instance:UART实例，如 huart1.Instance
  * 	@param	ch:要发送的byte	
  * 	@return	NONE
  * 	@note	需要根据使用MCU进行移植
  */
-void mb_port_putchar(uint8_t ch);
+void mb_port_putchar(USART_TypeDef *Instance, uint8_t ch);
 /**
  * 	@brief  串口读取一个byte
+ *  @param  Instance:UART实例，如 huart1.Instance
  * 	@param	ch:存放读取一个byte的指针	
  * 	@return	NONE
  * 	@note	需要根据使用MCU进行移植
  */
-void mb_port_getchar(uint8_t *ch);
+void mb_port_getchar(USART_TypeDef *Instance, uint8_t *ch);
 /**
  * 	@brief  定时器初始化接口
  * 	@param	baud:串口波特率,根据波特率生成3.5T的定时

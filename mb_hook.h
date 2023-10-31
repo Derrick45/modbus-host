@@ -20,14 +20,14 @@
  * 	@return	NONE
  * 	@note	rec01\02\03……等数字代表功能码
  */
-void mbh_hook_rec01(uint8_t add,uint8_t *data,uint8_t datalen);
-void mbh_hook_rec02(uint8_t add,uint8_t *data,uint8_t datalen);
-void mbh_hook_rec03(uint8_t add,uint8_t *data,uint8_t datalen);
-void mbh_hook_rec04(uint8_t add,uint8_t *data,uint8_t datalen);
-void mbh_hook_rec05(uint8_t add,uint8_t *data,uint8_t datalen);
-void mbh_hook_rec06(uint8_t add,uint8_t *data,uint8_t datalen);
-void mbh_hook_rec15(uint8_t add,uint8_t *data,uint8_t datalen);
-void mbh_hook_rec16(uint8_t add,uint8_t *data,uint8_t datalen);
+void mbh_hook_rec01(uint8_t add, uint8_t *data, uint8_t datalen);
+void mbh_hook_rec02(uint8_t add, uint8_t *data, uint8_t datalen);
+void mbh_hook_rec03(uint8_t add, uint8_t *data, uint8_t datalen);
+void mbh_hook_rec04(uint8_t add, uint8_t *data, uint8_t datalen);
+void mbh_hook_rec05(uint8_t add, uint8_t *data, uint8_t datalen);
+void mbh_hook_rec06(uint8_t add, uint8_t *data, uint8_t datalen);
+void mbh_hook_rec15(uint8_t add, uint8_t *data, uint8_t datalen);
+void mbh_hook_rec16(uint8_t add, uint8_t *data, uint8_t datalen);
 /**
  * 	@brief  MODBUS主机读写从机超过最大错误次数回调
  *	@param	add:从机的地址
